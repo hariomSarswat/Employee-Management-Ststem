@@ -3,22 +3,22 @@
 using namespace std;
 int i=0;
 # define limit 50
-void menu();
-void input();
+void Menu();
+void Input();
 void Search();
 void Departmentlist();
 void Displayall();
 void Update();
 void Delete();
-void moreinformation();
-void age();
+void Moreinformation();
+void Age();
 void Experience();
 void Gender();
-void salary();
+void Salary();
 class Employee
 {
   public:
-          int Salary,ID,Age,Exp,num;
+          int Salary,ID,Age,Exp,Num;
 
           string Name,Sex,Department,Post;
 
@@ -46,7 +46,7 @@ void menu()
             {
                 case 1:
                 {
-                  input();
+                  Input();
                   break;
                 }
                 case 2:
@@ -81,7 +81,7 @@ void menu()
                 }
                 case 8:
                 {
-                  moreinformation();
+                  Moreinformation();
                   break;
                 }
                 default :
@@ -92,7 +92,7 @@ void menu()
             }
   
 }
-void input()
+void Input()
 {           
               if(i<limit)
               {
@@ -102,24 +102,24 @@ void input()
                   cin>>E[i].ID;
                   cout<<"Employee Age :";
                   cin>>E[i].Age;
-                  cout<<"Employee sex :(M/f)";
+                  cout<<"Employee Sex :(M/f)";
                   cin>>E[i].Sex;
-                  cout<<"Employee department:";
+                  cout<<"Employee Department:";
                   cin>>E[i].Department;
                   cout<<"Employee Post :";
                   cin>>E[i].Post;
-                  cout<<"Employee Exp. :";
+                  cout<<"Employee Exp.(Years) :";
                   cin>>E[i].Exp;
                   cout<<"Employee Salary :";
                   cin>>E[i].Salary;
                   i++;
               }
-              menu();
+              Menu();
 }
 void Search()
 {
             int code,count=0,j;
-            cout<<"insert ID no.that you Search:";
+            cout<<"Insert ID no.that you want Search:";
             cin>>code;
             for(j=0;j<limit;j++)
             {
@@ -148,7 +148,7 @@ void Search()
                 {
                   cout<<"error : not found "<<endl<<"enter a valid ID no."<<endl;
                 }
-            menu();
+            Menu();
 }
 void Departmentlist()
 {
@@ -169,7 +169,7 @@ void Departmentlist()
                 {
                   cout<<"error : not found "<<endl<<"enter a valid Department no."<<endl;
                 }
-            menu();
+            Menu();
 }
 void Displayall()
 {            
@@ -194,7 +194,7 @@ void Displayall()
                   cout<<E[j].Salary<<endl;
                   
             }
-            menu();
+            Menu();
 }
 void Update()
 { 
@@ -226,7 +226,7 @@ void Update()
                 {
                   cout<<"error : not found "<<endl<<"enter a valid ID no."<<endl;
                 }
-            menu();
+            Menu();
 }
 void Delete()
 {
@@ -257,9 +257,9 @@ void Delete()
                 {
                   cout<<"error : not found "<<endl<<"enter a valid ID no."<<endl;
                 }
-            menu();
+            Menu();
 }
-void moreinformation()
+void Moreinformation()
 {
   cout<<"#### FOR MORE INFORMATION ####"<<endl<<"CHOOSE AN OPTION "<<endl;
   cout<<"1=>For age seperation"<<endl;
