@@ -273,7 +273,7 @@ void Moreinformation()
   {
     case 1:
     {
-      age();
+      Age();
       break;
     }
     case 2:
@@ -288,7 +288,7 @@ void Moreinformation()
     }
     case 4:
     {
-      salary();
+      Salary();
       break;
     }
     default :
@@ -299,7 +299,7 @@ void Moreinformation()
   }
   
 }
-void age()
+void Age()
 {
   int a,j;
   int count=0;
@@ -349,7 +349,7 @@ void Gender()
   cout<<"total "<<count<<" employye's are "<<gender<<endl;
   menu();
 }
-void salary()
+void Salary()
 {
   int j;
   int count=0;
